@@ -1,0 +1,36 @@
+<a class="menu">
+  <span class="menu__line menu__line--top"></span>
+  <span class="menu__line menu__line--center"></span>
+  <span class="menu__line menu__line--bottom"></span>
+</a>
+<nav class="gnav">
+  <div class="gnav__wrap">
+    <ul class="gnav__menu">
+      <li class="gnav__menu__item toppages"><a href="toppage.html"
+          class="animsition-link">トップページ<br><span>Top</span></a></li>
+      <li class="gnav__menu__item programs"><a href="program.html"
+          class="animsition-link">プログラム<br><span>Program</span></a></li>
+      <li class="gnav__menu__item pointss"><a href="points.html"
+          class="animsition-link">現在の得点<br><span>Points</span></a></li>
+      <li class="gnav__menu__item articless"><a href="articles.html"
+          class="animsition-link">記事一覧<br><span>Articles</span></a></li>
+      <li class="gnav__menu__item cheers"><a href="cheer.html"
+          class="animsition-link">応援団特集<br><span>Cheer Team</span></a></li>
+      <li class="gnav__menu__item sumos"><a href="sumo.html"
+          class="animsition-link">相撲特集<br><span>Sumo</span></a></li>
+      <li class="gnav__menu__item logins"><a href="login.php"
+          class="animsition-link">生徒専用コンテンツ<br><span>Private</span></a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  $('.menu').on('click', function () {
+    $('.menu__line').toggleClass('active');
+    $('.gnav').slideToggle();
+  });
+  $(document).ready(function () {
+    var str = window.location.href.split('/').pop();
+    var nowpage = str.split('.').shift() + 's';
+    $("." + nowpage + ">a span").css("background", "linear-gradient(transparent 75%, #7fbfff 75%)");
+  });
+</script>

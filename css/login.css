@@ -1,0 +1,83 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ヘッダー */
+header{
+  height: 7em;
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom:0px;
+  font-family: 'Shippori Mincho', serif;
+}
+header a{
+  text-decoration: none;
+  color: #000;
+}
+.page-title{
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width: 6em;
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+.description h2{
+  font-size: 20px;
+  line-height: 1.5;
+  padding-left:1em;
+  text-indent:-1em;
+}
+#logincontainer{
+  margin-top: 2em;
+  text-align: center;
+  font-size: 15px;
+}
+.outbutton{
+  margin: 10px auto;
+  display: block;
+  background-color: #e57373;
+  color:#fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* メインコンテンツ */
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4em;
+}
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
+@media(max-width:1000px){
+  .maincontent{
+    margin: 0 4%;
+  }
+  .midashi{
+    font-size: 2.5em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
+}

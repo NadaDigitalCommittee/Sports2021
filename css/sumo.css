@@ -1,0 +1,238 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ヘッダー */
+header{
+  height: 7em;
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom:0px;
+  font-family: 'Shippori Mincho', serif;
+}
+header a{
+  text-decoration: none;
+  color: #000;
+}
+.page-title{
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width: 6em;
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+/* バナー */
+.banner{
+  text-align: center;
+  background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+  font-size: 5em;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.521);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.banner:hover{
+  transform: translateY(-1px);
+  transition: .5s;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.521);
+}
+.banner a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.banner span{
+  display: block;
+}
+.banner2{
+  text-align: center;
+  font-size: 5em;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.521);
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+.banner2 a{
+  display: block;
+  text-decoration: underline;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* メインコンテンツ */
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4em;
+}
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
+.komidashi{
+  font-size: 2em;
+}
+.komidashi span{
+  font-size: 1.5em;
+  color: #89c3eb;
+}
+.bumon{
+  margin-top: 30px;
+  font-size: 1.5em;
+  border-bottom: 3px solid #000;
+  line-height: 2;
+}
+
+/* 写真 */
+.members{
+  margin: 40px 10%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px 5%;
+}
+.photo{
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 4px rgba(128, 128, 128, 0.521);
+  margin-bottom: 7px;
+}
+.photo:hover{
+  transform: translateY(-0.3px);
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.521);
+}
+.grade{
+  text-align: center;
+  color: #888;
+}
+.sikona{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+/* モーダル */
+.remodal{
+  text-align: left;
+}
+.remodal .grade,.remodal .sikona{
+  text-align: left;
+}
+.photosec{
+  display: inline-block;
+  width: 50%;
+}
+.photosec .grade{
+  margin-bottom: 5px;
+}
+.photosec .sikona{
+  font-size: 1.7em;
+}
+
+.photosec img{
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.remodal ul{
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 35px;
+  margin-left: 2em;
+  line-height: 1.5;
+}
+.remodal ul li{
+  list-style: none;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.remodal .remodal-close{
+  position: static;
+  display: block;
+  background-color: #e57373;
+  color:#fff;
+  text-decoration: none;
+  width: 8rem;
+  margin: 30px auto;
+  margin-bottom: 0px;
+}
+.remodal .remodal-close::before{
+  color: #95979c;
+}
+
+.remodal ul .warning{
+  font-size: 1em;
+  line-height: 1.5;
+  padding-left:1em;
+  text-indent:-1em;
+  margin-left: -1em;
+}
+@media(max-width:1000px){
+  .maincontent{
+    margin: 0 4%;
+  }
+  .midashi{
+    font-size: 2.5em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
+  .members{
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 3%;
+  }
+  .remodal{
+    display: inline;
+  }
+  .photosec{
+    width: 100%;
+    display: inline;
+    text-align: left;
+  }
+  .remodal ul{
+    display: inline;
+    position: static;
+  }
+  .banner{
+    font-size: 2em;
+    padding: 0;
+  }
+  .banner a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .banner2{
+    font-size: 1.5rem;
+  }
+}

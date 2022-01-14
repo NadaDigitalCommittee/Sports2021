@@ -1,0 +1,263 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #333;
+  /* scroll-behavior: smooth; */
+}
+.main{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 0%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* メインキャッチコピー */
+.maincatch{
+  height: 100vh;
+  margin:0 4%;
+}
+.mainmidashi{
+  position: relative;
+}
+.maintext{
+  position: relative;
+  top: 50%;
+}
+
+.logosec{
+  position: relative;
+  width: 40em;
+  height: 50em;
+  float: right;
+}
+.mainlogo{
+  position: relative;
+  width: 40em;
+  margin: 5em 0;
+  margin-top: 0em;
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.scroll{
+  padding-top: 60px;
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  position: relative;
+  left: 50%;
+  top: 80%;
+}
+.scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/* コンテンツ */
+
+.midashi{
+  font-size: 3em;
+}
+.midashi span{
+  font-size: 5rem;
+  color: #f15a25;
+}
+.about{
+  height: max-content;
+  padding: 2px 4%;
+  padding-left: 10%;
+  padding-top: 0;
+}
+.concept{
+  height: max-content;
+  padding: 2px 4%;
+  padding-left: 10%;
+  padding-top: 0;
+}
+.conceptmain{
+  display: flex;
+  margin: 10em 10%;
+}
+.photos{
+  margin-right: 15%;
+  width: 400px;
+}
+.name{
+  text-align: center;
+  margin-top: 1em;
+  width: 350px;
+  line-height: 2;
+}
+.conceptletters{
+  font-size: 20px;
+  line-height: 2;
+}
+.human{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 75px;
+}
+
+/* 記事 */
+.articles{
+  padding: 2px 4%;
+  padding-left: 10%;
+}
+
+.latest{
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  margin-bottom: 100px;
+  padding: 1em;
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+td,th{
+  font-size: 1.6em;
+}
+
+th{
+  padding-right: 5em;
+  padding: 1em;
+  border-bottom: #333 dashed 1px;
+}
+td{
+  padding-left: 5em;
+  
+  border-bottom: #333 dashed 1px;
+}
+table tr:last-child td ,tr:last-child th{
+  border-bottom: none;
+}
+
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+@media(max-width:1000px){
+  .maincatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainlogo{
+    width: 20em;
+  }
+  .logosec{
+    width: 20em;
+    height: 20em;
+    margin-top: 3em;
+  }
+  .maintext{
+    text-align: center;
+    position: static;
+  }
+  .scroll{
+    margin-top: auto;
+    /* position: static; */
+    display: block;
+    left: 0;
+    top: 0;
+  }
+  .midashi{
+    font-size: 3em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
+  .about{
+    padding-left: 4%; 
+  }
+  .concept{
+    padding-left: 4%;
+  }
+  .conceptmain{
+    flex-direction: column;
+    margin: 3em 5%;
+  }
+  .photos{
+    left: 0;
+  }
+  .name{
+    text-align: left;
+  }
+  .human{
+    margin-left: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .conceptletters{
+    margin-top: 3em;
+    font-size: 1em;
+  }
+  .articles{
+    padding-left: 4%;
+  }
+  .latest{
+    width: 100%;
+    padding:0.3em 0.5em;
+  }
+  td,th{
+    font-size: 0.9em;
+  }
+  
+  th{
+    padding-right: 0;
+    padding: 1em;
+  }
+  td{
+    padding-left: 0;
+  }
+
+}

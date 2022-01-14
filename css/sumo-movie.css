@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ヘッダー */
+header{
+  height: 7em;
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom:0px;
+  font-family: 'Shippori Mincho', serif;
+}
+header a{
+  text-decoration: none;
+  color: #000;
+}
+.page-title{
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width: 6em;
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+
+/* メインコンテンツ */
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4em;
+}
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
+.komidashi{
+  font-size: 2em;
+}
+.komidashi span{
+  font-size: 1.5em;
+  color: #89c3eb;
+}
+.warning{
+  margin-top: 20px;
+  line-height: 1.5;
+  padding-left:1em;
+  text-indent:-1em;
+}
+/* 表 */
+.maintable{
+  margin-top: 30px;
+}
+.lists dt{
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 500;
+  border: 1px solid #d9d9d9;
+  padding: 0.4em;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.sub{
+  display: none;
+}
+.lists dt::after{
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5em;
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  margin-top: -0.5em;
+}
+.lists dt.on::after{
+  content: "\f077";
+}
+.movie-wrapper{
+  position: relative;
+  width: 100%;
+}
+.movie-wrapper::before{
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.movie{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media(max-width:1000px){
+  .maincontent{
+    margin: 0 4%;
+  }
+  .midashi{
+    font-size: 2.5em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
+  .lists dt{
+    font-size:1em;
+  }
+}

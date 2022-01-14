@@ -1,0 +1,114 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ヘッダー */
+header{
+  height: 7em;
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom:0px;
+  font-family: 'Shippori Mincho', serif;
+}
+header a{
+  text-decoration: none;
+  color: #000;
+}
+.page-title{
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width: 6em;
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+/* メインコンテンツ */
+
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4rem;
+}
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
+/* 記事 */
+.paragraph{
+  margin: 30px 10%;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  padding: 60px;
+  border-radius: 30px;
+}
+.paragraph h2{
+  font-size: 3em;
+}
+.komidashi{
+  line-height: 1.5;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.letters{
+  margin-top: 1.5em;
+}
+.letters img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mainimg{
+  width: 30%;
+  height: 30%;
+  margin: 10px auto;
+  margin-right: 50px;
+}
+.paragraph p{
+  line-height: 2;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+#sign{
+  font-size: 2em;
+  text-align: end;
+  font-weight: 500;
+}
+
+@media(max-width:1000px){
+  .maincontent{
+    margin: 0 4%;
+  }
+  .midashi{
+    font-size: 2.5rem;
+  }
+  .paragraph{
+    margin: 30px 15px;
+    padding: 0;
+    box-shadow: none;
+  }
+  .paragraph h2{
+    font-size: 2em;
+  }
+  .paragraph p{
+    font-size: 1em;
+  }
+  #sign{
+    font-size: 1.5em;
+  }
+}

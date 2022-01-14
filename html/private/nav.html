@@ -1,0 +1,30 @@
+<a class="menu">
+  <span class="menu__line menu__line--top"></span>
+  <span class="menu__line menu__line--center"></span>
+  <span class="menu__line menu__line--bottom"></span>
+</a>
+<nav class="gnav">
+  <div class="gnav__wrap">
+    <ul class="gnav__menu">
+      <li class="gnav__menu__item toppages"><a href="../toppage.html"
+          class="animsition-link">トップページ<br><span>Top</span></a></li>
+      <li class="gnav__menu__item mains"><a href="main.php"
+          class="animsition-link">生徒用ページ<br><span>Private</span></a></li>
+      <li class="gnav__menu__item ruless"><a href="rules.php"
+          class="animsition-link">競技規則一覧<br><span>Rules</span></a></li>
+      <li class="gnav__menu__item sumo-movies"><a href="sumo-movie.php"
+          class="animsition-link">相撲試合動画配信<br><span>Sumo</span></a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+  $('.menu').on('click', function () {
+    $('.menu__line').toggleClass('active');
+    $('.gnav').slideToggle();
+  });
+  $(document).ready(function () {
+    var str = window.location.href.split('/').pop();
+    var nowpage = str.split('.').shift()+'s';
+    $("."+nowpage+">a span").css("background","linear-gradient(transparent 75%, #7fbfff 75%)");
+  });
+</script>

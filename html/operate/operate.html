@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="管理者用">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/operate.css">
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="../../vendor/animsition.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../vendor/marker-animation.js"></script>
+  <script src="../../vendor/aimsition.js"></script>
+
+  <script src="../../scripts/main.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <title>得点表示編集ページ</title>
+</head>
+
+<body class="animsition">
+  <a class="menu">
+    <span class="menu__line menu__line--top"></span>
+    <span class="menu__line menu__line--center"></span>
+    <span class="menu__line menu__line--bottom"></span>
+  </a>
+  <nav class="gnav">
+    <div class="gnav__wrap">
+      <ul class="gnav__menu">
+        <li class="gnav__menu__item toppages"><a href="../toppage.html"
+            class="animsition-link">トップページ<br><span>Top</span></a></li>
+        <li class="gnav__menu__item programs"><a href="../program.html"
+            class="animsition-link">プログラム<br><span>Program</span></a></li>
+        <li class="gnav__menu__item ruless"><a href="../rules.html" class="animsition-link">競技説明<br><span>Rules</span></a>
+        </li>
+        <li class="gnav__menu__item pointss"><a href="../points.html"
+            class="animsition-link">現在の得点<br><span>Points</span></a></li>
+        <li class="gnav__menu__item articless"><a href="../articles.html"
+            class="animsition-link">記事一覧<br><span>Articles</span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main">
+    <header>
+      <h1 class="page-title">灘校体育祭</h1>
+      <a href="../toppage.html" class="animsition-link"><img class="logo" src="../../img/logo-black.png" alt="logo"></a>
+    </header>
+    <div class="maincontent">
+      <h1 class="midashi"><span>管</span>理者用</h1>
+    </div>
+
+    <div class="warning">
+      <ul>
+        <li>変更がある箇所のみ入力して送信してください。0のまま送信した箇所は変更されません。</li>
+        <li>後半に差し掛かり得点表示を隠したい場合などは、下のラジオボタンを選択して送信してください。何も選択しなかった場合は変更されません。</li>
+        <li>点数を0点にしたい場合は-1と入力して送信してください。</li>
+      </ul>
+    </div>
+    <table class="point">
+      <tbody>
+        <tr>
+          <th></th>
+          <th class="classes">壱</th>
+          <th class="two classes">弐</th>
+          <th class="three classes">参</th>
+          <th class="four classes">肆</th>
+        </tr>
+        <tr>
+          <th class="name bou">理事長（予選）</th>
+          <td class="one "><input name="num[0]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[1]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[2]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[3]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name sen">戦略的（予選）</th>
+          <td class="one "><input name="grade[0]" type="text" value="0" form="form1"></td>
+          <td class="two "><input name="grade[1]" type="text" value="0" form="form1"></td>
+          <td class="three "><input name="grade[2]" type="text" value="0" form="form1"></td>
+          <td class="four "><input name="grade[3]" type="text" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name bou">棒引き</th>
+          <td class="one "><input name="num[4]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[5]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[6]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[7]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name nn">N人N+1脚</th>
+          <td class="one "><input name="num[8]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[9]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[10]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[11]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name kiba">騎馬戦</th>
+          <td class="one "><input name="num[12]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[13]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[14]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[15]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name run">run for pull</th>
+          <td class="one "><input name="num[16]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[17]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[18]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[19]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name bou">校長杯</th>
+          <td class="one "><input name="num[20]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[21]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[22]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[23]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name the">THE CHIKARA</th>
+          <td class="one "><input name="num[24]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[25]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[26]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[27]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name senfi">戦略的（決勝）</th>
+          <td class="one "><input name="num[28]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[29]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[30]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[31]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name last">ラストラン</th>
+          <td class="one "><input name="num[32]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[33]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[34]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[35]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name rirem">組対抗（中学）</th>
+          <td class="one "><input name="num[36]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[37]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[38]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[39]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name rireh">組対抗（高校）</th>
+          <td class="one "><input name="num[40]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[41]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[42]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[43]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="name bou">理事長（決勝）</th>
+          <td class="one "><input name="num[44]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[45]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[46]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[47]" type="number" value="0" form="form1"></td>
+        </tr>
+        <tr>
+          <th class="noborder name tuna">綱引き</th>
+          <td class="one "><input name="num[48]" type="number" value="0" form="form1"></td>
+          <td class="two "><input name="num[49]" type="number" value="0" form="form1"></td>
+          <td class="three "><input name="num[50]" type="number" value="0" form="form1"></td>
+          <td class="four "><input name="num[51]" type="number" value="0" form="form1"></td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="../../backend/operate.php" id="form1" method="POST">
+      <div class="radios">
+        <input type="radio" name="visible" value="0" id="change">
+        <label for="change">体育祭前半用、得点表示<br></label>
+        <input type="radio" name="visible" value="1" id="change">
+        <label for="change">体育祭後半用、得点表示を隠す</label>
+      </div>
+      <button class="button1">変更</button>
+    </form>
+  </div>
+</body>
+
+</html>

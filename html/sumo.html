@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="相撲特集">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/sumo.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../vendor/animsition.min.css">
+  <link rel="stylesheet" href="../vendor/remodal.css">
+  <link rel="stylesheet" href="../vendor/remodal-default-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="../vendor/marker-animation.js"></script>
+  <script src="../vendor/aimsition.js"></script>
+  <script src="../vendor/remodal.min.js"></script>
+
+  <script src="../scripts/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="../img/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../img/logo-black.png">
+  <title>相撲特集</title>
+</head>
+
+<body class="animsition">
+  <div id="nav"></div>
+  <div class="main">
+    <header>
+      <h1 class="page-title">灘校体育祭</h1>
+      <a href="toppage.html" class="animsition-link"><img class="logo" src="../img/logo-black.png" alt="logo"></a>
+    </header>
+    <div class="maincontent">
+      <h1 class="midashi"><span>相</span>撲特集</h1>
+      <div class="banner"><a href="private/sumo-movie.php">相撲全試合<span>動画配信中！！！</span></a></div>
+      <div class="banner2"><a href="sumo-information.html">※重要※<br>予選会の判定変更に関して</a></div>
+      <h2 class="komidashi"><span>力</span>士一覧</h2>
+      <h3 class="bumon">決勝トーナメント</h3>
+      <div class="members">
+        <div class="human">
+          <img src="../img/sumo/uragankin.jpg" alt="" class="photo" data-remodal-target="modal1">
+          <p class="grade">76回生</p>
+          <p class="sikona">ウラガンキン亜種</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/outigaki.jpg" alt="" class="photo" data-remodal-target="modal2">
+          <p class="grade">74回生</p>
+          <p class="sikona">大内柿</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/ogura.jpg" alt="" class="photo" data-remodal-target="modal3">
+          <p class="grade">76回生</p>
+          <p class="sikona">小倉トーストマン</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/tanakamaru.jpg" alt="" class="photo" data-remodal-target="modal4">
+          <p class="grade">74回生</p>
+          <p class="sikona">田中丸</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/toukaidou.jpg" alt="" class="photo" data-remodal-target="modal5">
+          <p class="grade">74回生</p>
+          <p class="sikona">東海道</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/sheka-ra-shika.jpg" alt="" class="photo" data-remodal-target="modal6">
+          <p class="grade">76回生</p>
+          <p class="sikona">シェカ・ラ・シカ</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/asutora.JPG" alt="" class="photo" data-remodal-target="modal7">
+          <p class="grade">76回生</p>
+          <p class="sikona">アストラゼネカ</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/ehara.JPG" alt="" class="photo" data-remodal-target="modal8">
+          <p class="grade">76回生</p>
+          <p class="sikona">江原happiness</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/kyasarin.JPG" alt="" class="photo" data-remodal-target="modal9">
+          <p class="grade">75回生</p>
+          <p class="sikona">キャサリン</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/kinsyasa.JPG" alt="" class="photo" data-remodal-target="modal10">
+          <p class="grade">76回生</p>
+          <p class="sikona">金紗沙</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/saiyasui.JPG" alt="" class="photo" data-remodal-target="modal11">
+          <p class="grade">74回生</p>
+          <p class="sikona">スーパーサイ安井</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/tensaihada.JPG" alt="" class="photo" data-remodal-target="modal12">
+          <p class="grade">76回生</p>
+          <p class="sikona">天才肌</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/tenpazamurai.JPG" alt="" class="photo" data-remodal-target="modal13">
+          <p class="grade">76回生</p>
+          <p class="sikona">天パ侍</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/tyorenosuke.JPG" alt="" class="photo" data-remodal-target="modal14">
+          <p class="grade">76回生</p>
+          <p class="sikona">ちょれのすけ</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/kazahukeba.JPG" alt="" class="photo" data-remodal-target="modal15">
+          <p class="grade">76回生</p>
+          <p class="sikona">風吹けば名無し</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/matunoyama.JPG" alt="" class="photo" data-remodal-target="modal16">
+          <p class="grade">74回生</p>
+          <p class="sikona">松之山</p>
+        </div>
+        <div class="modals">
+          <div class="remodal" data-remodal-id="modal1">
+            <div class="photosec">
+              <img src="../img/sumo/uragankin.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">ウラガンキン亜種</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>顎が長くて強いから</p>
+              <li>本戦に向けての意気込み</li>
+              <p>負けそうにないので皆さん頑張ってください。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal2">
+            <div class="photosec">
+              <img src="../img/sumo/outigaki.jpg" alt="">
+              <p class="grade">74回生</p>
+              <p class="sikona">大内柿</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>始業式の挨拶で大内刈りが好きと言うことで有名になったからです。</p>
+              <li>本戦に向けての意気込み</li>
+              <p>優勝以外狙っていません。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+        </div>
+        <div class="remodal" data-remodal-id="modal3">
+          <div class="photosec">
+            <img src="../img/sumo/ogura.jpg" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">小倉トーストマン</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>名古屋出身で小倉トーストが好きなので、アンパンマンとかけた四股名にしました。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>初出場ですが頑張ろうと思います。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal4">
+          <div class="photosec">
+            <img src="../img/sumo/tanakamaru.jpg" alt="">
+            <p class="grade">74回生</p>
+            <p class="sikona">田中丸</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>名前が田中なので。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>優勝目指してがんばります。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal5">
+          <div class="photosec">
+            <img src="../img/sumo/toukaidou.jpg" alt="">
+            <p class="grade">74回生</p>
+            <p class="sikona">東海道</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>東京出身で、東海道を通って神戸に来たことから「東海道」に決めました。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal6">
+          <div class="photosec">
+            <img src="../img/sumo/sheka-ra-shika.jpg" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">シェカ・ラ・シカ</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>中一の頃行っていたラーメン屋の名前です。今は歌事軒の方が好きです。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal7">
+          <div class="photosec">
+            <img src="../img/sumo/asutora.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">アストラゼネカ</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>俺の体にはアストラゼネカ神の血が入っている。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>震え上がって素っ裸になって泣きながら待ってろ生徒会長さんよ</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal8">
+          <div class="photosec">
+            <img src="../img/sumo/ehara.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">江原happiness</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>尼崎の公園にあるうんこハピネスという落書きから取りました。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>優勝目指してがんばります。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal9">
+          <div class="photosec">
+            <img src="../img/sumo/kyasarin.JPG" alt="">
+            <p class="grade">75回生</p>
+            <p class="sikona">キャサリン</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>友人に相談したところじゃあキャサリンにしたら良いと言われたので。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>去年は一回戦で負けました。去年と同じ四股名で、勝ち上がって優勝を狙います。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal10">
+          <div class="photosec">
+            <img src="../img/sumo/kinsyasa.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">金紗沙</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>コンゴ民主共和国の地名キンシャサにインスピレーションを受けました。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>昔相撲をしていた経験を活かし、体格のハンディも埋めて行きます。姿勢を大事にして思いっきり前にぶつかりたいと思います。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal11">
+          <div class="photosec">
+            <img src="../img/sumo/saiyasui.JPG" alt="">
+            <p class="grade">74回生</p>
+            <p class="sikona">スーパーサイ安井</p>
+          </div>
+          <ul>
+            <li class="warning">※予選会ではスーパーサイ安井選手は負けという判定でしたが、ビデオ判定の結果玄界灘選手の反則行為（首から上を攻撃する行為）が認められたため、スーパーサイ安井選手が本戦に出場することとなりました。</li>
+            <li>四股名の由来</li>
+            <p>安井とスーパーサイヤ人をもじって決めました。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal12">
+          <div class="photosec">
+            <img src="../img/sumo/tensaihada.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">天才肌</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>語感。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>俺しか勝たん。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal13">
+          <div class="photosec">
+            <img src="../img/sumo/tenpazamurai.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">天パ侍</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>天パ　天パって言われるからです。僕は認めていません。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>生研を代表して生物の真骨頂を見せつけてやります。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal14">
+          <div class="photosec">
+            <img src="../img/sumo/tyorenosuke.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">ちょれのすけ</p>
+          </div>
+          <ul>
+            <li class="warning">※予選ではちょれのすけ選手は敗北しましたが、対戦相手のたんじろう選手が棄権したため本線に出場することとなりました。</li>
+            <li>四股名の由来</li>
+            <p>勝ったときにチョレイと叫ぶためです。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>もらったチャンス、ハリパンチで仕留めます。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal15">
+          <div class="photosec">
+            <img src="../img/sumo/kazahukeba.JPG" alt="">
+            <p class="grade">76回生</p>
+            <p class="sikona">風吹けば名無し</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>2chから。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>次の試合も粘って勝てるよう頑張りたい。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal16">
+          <div class="photosec">
+            <img src="../img/sumo/matunoyama.JPG" alt="">
+            <p class="grade">74回生</p>
+            <p class="sikona">松之山</p>
+          </div>
+          <ul>
+            <li>四股名の由来</li>
+            <p>名字の一部の「松」から力士らしい四股名を考えました。</p>
+            <li>本戦に向けての意気込み</li>
+            <p>前ラグビー部主将として、優勝します。</p>
+          </ul>
+          <button class="remodal-close" data-remodal-action="close">閉じる</button>
+        </div>
+      </div>
+      <h3 class="bumon">予選出場者</h3>
+      <div class="members">
+        <div class="human">
+          <img src="../img/sumo/mubappe.jpg" alt="" class="photo" data-remodal-target="modal17">
+          <p class="grade">75回生</p>
+          <p class="sikona">ムバッペ</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/masunosuke.jpg" alt="" class="photo" data-remodal-target="modal18">
+          <p class="grade">76回生</p>
+          <p class="sikona">マスノスケブラック</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/chanko.jpg" alt="" class="photo" data-remodal-target="modal19">
+          <p class="grade">76回生</p>
+          <p class="sikona">ちゃんこスター</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/harenosora.jpg" alt="" class="photo" data-remodal-target="modal20">
+          <p class="grade">76回生</p>
+          <p class="sikona">はれのそら明朝</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/hamutarou.jpg" alt="" class="photo" data-remodal-target="modal21">
+          <p class="grade">75回生</p>
+          <p class="sikona">覇無多狼関</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/shekarashika.jpg" alt="" class="photo" data-remodal-target="modal22">
+          <p class="grade">76回生</p>
+          <p class="sikona">しぇからしか</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/doragon.JPG" alt="" class="photo" data-remodal-target="modal23">
+          <p class="grade">75回生</p>
+          <p class="sikona">ドラゴン桜</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/tanziro.JPG" alt="" class="photo" data-remodal-target="modal24">
+          <p class="grade">75回生</p>
+          <p class="sikona">たんじろう</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/yamamaru.JPG" alt="" class="photo" data-remodal-target="modal25">
+          <p class="grade">74回生</p>
+          <p class="sikona">山山丸丸</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/mouko.JPG" alt="" class="photo" data-remodal-target="modal26">
+          <p class="grade">75回生</p>
+          <p class="sikona">猛虎ヴィヴィアンヌ</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/mikki-.JPG" alt="" class="photo" data-remodal-target="modal27">
+          <p class="grade">75回生</p>
+          <p class="sikona">ミッキーマウス</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/genkainada.jpg" alt="" class="photo" data-remodal-target="modal28">
+          <p class="grade">76回生</p>
+          <p class="sikona">玄界灘</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/katuo.JPG" alt="" class="photo" data-remodal-target="modal29">
+          <p class="grade">76回生</p>
+          <p class="sikona">勝男</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/zingisukan.JPG" alt="" class="photo" data-remodal-target="modal30">
+          <p class="grade">76回生</p>
+          <p class="sikona">ジンジンジンジンジンギスカン</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/abumaru.JPG" alt="" class="photo" data-remodal-target="modal31">
+          <p class="grade">76回生</p>
+          <p class="sikona">阿武丸</p>
+        </div>
+        <div class="human">
+          <img src="../img/sumo/takenokonoyama.JPG" alt="" class="photo" data-remodal-target="modal32">
+          <p class="grade">76回生</p>
+          <p class="sikona">たけのこの山</p>
+        </div>
+
+        <div class="modals">
+          <div class="remodal" data-remodal-id="modal17">
+            <div class="photosec">
+              <img src="../img/sumo/mubappe.jpg" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">ムバッペ</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>逃げ足だけは、フランス代表ムバッペに劣りません。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal18">
+            <div class="photosec">
+              <img src="../img/sumo/masunosuke.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">マスノスケブラック</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>名前に悩んでいて馬の名前にしろと友達に言われたので。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal19">
+            <div class="photosec">
+              <img src="../img/sumo/chanko.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">ちゃんこスター</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>スター性を持たせたかった。思いつきで。勢いで。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal20">
+            <div class="photosec">
+              <img src="../img/sumo/harenosora.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">はれのそら明朝</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>先代図書委員が引き継ぎ資料で使っていたフォントの名前です。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal21">
+            <div class="photosec">
+              <img src="../img/sumo/hamutarou.jpg" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">覇無多狼関</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>なんとなくで決めました。名前よりも相撲の内容に注目してください。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal22">
+            <div class="photosec">
+              <img src="../img/sumo/shekarashika.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">しぇからしか</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>なだこうせいに親しいものを選んだ。シェカ・ラ・シカには負けない。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal23">
+            <div class="photosec">
+              <img src="../img/sumo/doragon.JPG" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">ドラゴン桜</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>名前の一文字「龍」からドラゴンを取り、その流れでドラゴン桜になりました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal24">
+            <div class="photosec">
+              <img src="../img/sumo/tanziro.JPG" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">たんじろう</p>
+            </div>
+            <ul>
+              <li class="warning">※たんじろう選手は本線への出場を棄権したため、対戦相手のちょれのすけ選手が本戦出場することとなりました。</li>
+              <li>四股名の由来</li>
+              <p>国民的アニメ、鬼滅の刃から取りました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal25">
+            <div class="photosec">
+              <img src="../img/sumo/yamamaru.JPG" alt="">
+              <p class="grade">74回生</p>
+              <p class="sikona">山山丸丸</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>四股名でよくある、「～山」と「～丸」を合わせました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal28">
+              <div class="photosec">
+                <img src="../img/sumo/genkainada.jpg" alt="">
+                <p class="grade">76回生</p>
+                <p class="sikona">玄界灘</p>
+              </div>
+              <ul>
+                <li class="warning">※予選会ではスーパーサイ安井選手は負けという判定でしたが、ビデオ判定の結果玄界灘選手の反則行為（首から上を攻撃する行為）が認められたため、スーパーサイ安井選手が本戦に出場することとなりました。</li>
+                <li>四股名の由来</li>
+                <p>福岡に住んでいた頃、慣れ親しんでいた地名の名前を入れました。</p>
+              </ul>
+              <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal26">
+            <div class="photosec">
+              <img src="../img/sumo/mouko.JPG" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">猛虎ヴィヴィアンヌ</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>阪神ファンなので「猛虎」、ヴィヴィアンヌはノリで友達につけてもらいました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal27">
+            <div class="photosec">
+              <img src="../img/sumo/mikki-.JPG" alt="">
+              <p class="grade">75回生</p>
+              <p class="sikona">ミッキーマウス</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>僕がミッキーマウスなので。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal28">
+            <div class="photosec">
+              <img src="../img/sumo/genkainada.jpg" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">玄界灘</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>福岡に住んでいた頃、慣れ親しんでいた地名の名前を入れました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal29">
+            <div class="photosec">
+              <img src="../img/sumo/katuo.JPG" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">勝男</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>一心に勝つという思いだけを込めました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal30">
+            <div class="photosec">
+              <img src="../img/sumo/zingisukan.JPG" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">ジンジンジンジンジンギスカン</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>ジンジンジンジンジンギスカンという曲から取りました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal31">
+            <div class="photosec">
+              <img src="../img/sumo/abumaru.JPG" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">阿武丸</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>本名からとりました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal32">
+            <div class="photosec">
+              <img src="../img/sumo/takenokonoyama.JPG" alt="">
+              <p class="grade">76回生</p>
+              <p class="sikona">たけのこの山</p>
+            </div>
+            <ul>
+              <li>四股名の由来</li>
+              <p>漆黒の白衣なるものを探した結果です。前と後が矛盾しているものを探しました。</p>
+            </ul>
+            <button class="remodal-close" data-remodal-action="close">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* ヘッダー */
+header{
+  height: 7em;
+  border-bottom: solid 1px #000;
+  text-align: center;
+  margin-bottom:0px;
+  font-family: 'Shippori Mincho', serif;
+}
+header a{
+  text-decoration: none;
+  color: #000;
+}
+.page-title{
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width: 6em;
+  margin-top: -2em;
+  margin-bottom: -4em;
+}
+
+/* メインコンテンツ */
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4em;
+}
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
+/* 合計得点 */
+.sum{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:100px auto;
+}
+.circle{
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  width: 150px;
+  height: 150px;
+}
+.onetwo{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.threefour{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.letter{
+  display: block;
+  position: relative;
+  top: 20%;
+}
+.circle h2{
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+}
+.circle p{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.twopoint{
+  color: #e95464;
+}
+.threepoint{
+  /* color: #ffea00; */
+  color: #ffd900;
+}
+.fourpoint{
+  color: #007b43;
+}
+
+.point{
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  border: #c0c0c0 1px solid;
+  text-align: center;
+}
+td,th{
+  font-size: 2rem;
+  padding: 1rem;
+  /* border-bottom: #c0c0c0 1px solid;
+  border-right: #c0c0c0 1px solid; */
+  border: #c0c0c0 1px solid;
+}
+td:last-child,th:last-child{
+  border-right: none;
+}
+.noborder{
+  border-bottom: none;
+}
+td{
+  width: 7em;
+}
+.two{
+  /* background-color: #ff9999; */
+  /* background-color: #e95464; */
+  background-color: #f09199;
+}
+.three{
+  background-color: #fef263;
+}
+.four{
+  background-color: #aacf53;
+}
+@media(max-width:1000px){
+  .maincontent{
+    margin: 0 4%;
+  }
+  .midashi{
+    font-size: 2.5em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
+  .point{
+    width: 95%;
+    padding:0.3em 0.5em;
+    text-align: center;
+  }
+  td,th{
+    font-size: 0.5em;
+  }
+  
+  th{
+    padding-right: 0;
+    padding: 0.5em;
+  }
+  .classes{
+    font-size: 1em;
+  }
+  .name{
+    font-size: 1em;
+  }
+  .circle h2{
+    font-size: 1em;
+  }
+  .circle p{
+    font-size: 1.7em;
+  }
+  .circle{
+    width: 6em;
+    height: 6em;
+  }
+  .sum{
+    margin: 30px auto;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .onetwo{
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .threefour{
+    width: 100%;
+    justify-content: center;
+  }
+  .onepoint,.threepoint{
+    margin-right: 20px;
+  }
+  .twopoint,.fourpoint{
+    margin-left: 20px;
+  }
+  .outputs,.outgrade{
+    font-weight: 600;
+    font-size: larger;
+    width: fit-content;
+    padding: 0;
+  }
+  .outgrade{
+    font-size: medium;
+  }
+}
