@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;500;700&family=Zen+Maru+Gothic:wght@300&display=swap");
+
+th {
+  text-align: center;
+  color: #6c6c6c;
+  font-size: 10px;
+  background-color: #fbfbfb;
+}
+td {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+tr {
+  display: table;
+  border-bottom: 1px solid black;
+  border-color: #6c6c6c;
+}
+
+table {
+  padding: auto;
+  margin: auto;
+  margin-top: 30px;
+  border-color: #6c6c6c;
+  border-collapse: collapse;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+.more {
+  width: 30px;
+}
+
+.more_img {
+  margin-top: 8px;
+  width: 15px;
+}
+
+.rank {
+  width: 30px;
+}
+
+.team {
+  width: 100px;
+}
+
+.position {
+  width: 100px;
+}
+
+.lag {
+  width: 80px;
+}
+
+.time {
+  width: 60px;
+}
+
+td.team,
+td.position {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+td.rank,
+td.time,
+td.lag {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+td.rank {
+  font-weight: bold;
+}
+
+td.more {
+  background-color: #eee;
+}
+
+#mihon {
+  display: none;
+}
+
+.table-cell {
+  float: auto;
+}
+
+.detail {
+  margin: 0%;
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin-left: 31px;
+  text-align: left;
+  font-size: 15px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.detail-next {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.detail-img {
+  width: 50px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 3px;
+}
+
+a {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  float: right;
+  margin-right: 30px;
+}
+
+.next-runner,
+.current-runner,
+.team-name {
+  border-bottom: 1px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.wrapper {
+  padding: 1em 10%;
+  background: #6077da;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  margin: 0%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+}
