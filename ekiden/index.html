@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>ランキング</title>
+    <meta name="description" content="2022年駅伝大会ランキング" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ranking.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>ランキング</title>
-  <meta name="description" content="2022年駅伝大会ランキング" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="ranking.css" />
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="ranking.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
 
-  <script src="ranking.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-</head>
-
-<body>
-  <div class="wrapper">
-    <a href="https://ekiden.nada-sc.jp">灘校駅伝大会2022</a>
-
-  </div>
-  <table>
-    <tr>
-      <th class="rank">順位</th>
-      <th class="team">チーム名</th>
-      <th class="position">通過地点</th>
-      <th class="time">通過時間</th>
-      <th class="lag">前との差＊</th>
-    </tr>
-    <tbody id="ranking"></tbody>
-  </table>
-  <p>
-    *前との差は直近の通過時刻から計算したものなので、実際とはずれがあります。
-  </p>
-  <p>*体育委員の測定漏れにより実際の順位と異なる場合がございます。</p>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <a href="https://ekiden.nada-sc.jp">灘校駅伝大会2022</a>
+    </div>
+    <table>
+      <tr>
+        <th class="rank">順位</th>
+        <th class="team">チーム名</th>
+        <th class="position">通過地点</th>
+        <th class="time">通過時間</th>
+        <th class="lag">前との差＊</th>
+      </tr>
+      <tbody id="ranking"></tbody>
+    </table>
+    <p>
+      *前との差は直近の通過時刻から計算したものなので、実際の距離とはずれがあります。
+    </p>
+    <p>*体育委員の測定漏れにより実際の順位と異なる場合があります。</p>
+  </body>
 </html>
