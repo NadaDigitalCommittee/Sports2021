@@ -35,7 +35,8 @@ function create_row(json, i, table_obj) {
   rank_elem.className = "rank";
 
   var team_elem = document.createElement("td");
-  team_elem.innerHTML = json[i].team;
+  var team_name = json[i].team.split(" ")[1];
+  team_elem.innerHTML = team_name;
   team_elem.className = "team";
 
   var position_elem = document.createElement("td");
